@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Quiz</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+</head>
+<body id="mypage">
+    <div class="container-fluid">
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand"><h3>View Highscore:</h3></a>
+        <div id="scoreContainer" style="display: contents"></div>
+        <h2>Code Quiz Challenge</h2>
+        <form class="form-inline">
+            <h3>Timer:</h3>
+            <div id="timer"></div>
+            <div id="counter"></div>
+            <div id="timeGauge"></div>               
+        </form>
+    </nav>
+
+    <div id="container">
+      <div id="start">Start Quiz!</div>
+      <div id="quiz" style="display: none">
+          <div id="question"></div>
+          <div id="qImg"></div>
+          <div id="choices">
+              <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+              <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+              <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+              <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+          </div>
+          <div id="progress"></div>
+      </div>
+  
+  </div>
+<!-- <div id="SaveL" style=" display:none;" ><button onclick="storeLocal()">Save result</button></div> -->
+  <script src="script.js"></script>
+
+</body>
+</html>
